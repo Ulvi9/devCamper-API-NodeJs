@@ -1,8 +1,10 @@
 const express=require("express");
 const dotenv=require("dotenv");
 const morgan=require("morgan");
-const colors=require("colors")
-const connectDb=require("./config/db")
+const colors=require("colors");
+const errorHandler=require("./middleware/error");
+const connectDb=require("./config/db");
+
 
 //load end vars
 dotenv.config({path:"./config/config.env"});
@@ -11,7 +13,7 @@ const app=express();
 //connect to db
  connectDb();
 
-//route files
+ //route files
 const bootcamps=require("./routes/bootcamps");
 
 //body parser
@@ -23,7 +25,7 @@ if (process.env.NODE_ENV=="development"){
 
 //mount routers
 app.use("/api/v1/bootcamps",bootcamps);
-
+app.use(errorHandler);
 
 //listen port
 const PORT=process.env.PORT||5000;

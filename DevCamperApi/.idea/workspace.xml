@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="bootcamp model CRUD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bootcamps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Bootcamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bootcamp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +64,17 @@
       <option name="presentableId" value="Default" />
       <updated>1610878066531</updated>
       <workItem from="1610878067903" duration="20010000" />
-      <workItem from="1610909784029" duration="3067000" />
+      <workItem from="1610909784029" duration="3706000" />
+      <workItem from="1610952838917" duration="10677000" />
     </task>
+    <task id="LOCAL-00001" summary="bootcamp model CRUD">
+      <created>1610914318422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610914318422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,12 +93,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bootcamp model CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootcamp model CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610878521243" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610914326765">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610914326765" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610879217757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
