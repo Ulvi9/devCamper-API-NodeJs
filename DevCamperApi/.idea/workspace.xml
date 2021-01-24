@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding filtering">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding sorting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bootcamps.js" afterDir="false" />
     </list>
@@ -66,7 +66,8 @@
       <workItem from="1611161937208" duration="592000" />
       <workItem from="1611253230800" duration="172000" />
       <workItem from="1611423318113" duration="4552000" />
-      <workItem from="1611469634568" duration="3286000" />
+      <workItem from="1611469634568" duration="3594000" />
+      <workItem from="1611491494460" duration="3397000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611470501214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding sorting">
+      <created>1611473869827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611473869827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +122,8 @@
     <MESSAGE value="bootcamp model CRUD" />
     <MESSAGE value="adding custom error handling" />
     <MESSAGE value="adding filtering" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding filtering" />
+    <MESSAGE value="adding sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding sorting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
@@ -125,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611469734033" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611470512986">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611473877197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611470512986" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611473877197" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610879217757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
