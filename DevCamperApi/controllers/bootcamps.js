@@ -1,14 +1,18 @@
 const Bootcamp=require("../models/Bootcamp");
 const ErrorResponse=require("../utils/errorResponse");
 const asyncHandler=require("../middleware/async");
+const geoCoder=require("../utils/geocoder")
 
 
 //@desc get all bootcamps
 //@route GET api/v1/bootcamps
 //@access public
 exports.getBootcamps=asyncHandler( async (req,res,next)=>{
-
-        const bootcamps=await Bootcamp.find();
+ let query;
+ let queryStr=JSON.stringify(req.query);
+ queryStr=queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g,match=>`$${match}`);
+    query=Bootcamp.find(JSON.parse(queryStr));
+        const bootcamps=await query;
         res.status(200).json({
             count:bootcamps.length,
             success:true,
@@ -63,4 +67,23 @@ exports.deleteBootcamp=asyncHandler( async (req,res,next)=>{
             success:true,
             data:{}
         });
+});
+//@desc get  bootcampInRadius
+//@route Get api/v1/bootcamps/:zipcode/:distance
+//@access public
+exports.getBootcampInRadius=asyncHandler( async (req,res,next)=>{
+    const {zipcode,distance}=req.body;
+    //get lng lat from geocoder;
+    const loc=await geoCoder.geocode(zipcode);
+    const lng=loc[0].longitude;
+    const lat=loc[0].latitude;
+    const radius=distance/3963;
+    const bootcamps=await Bootcamp.find({
+        location:{$geoWithin:{$centerSphere:[[lng,lat],radius]}}
+    });
+    res.status(200).json({
+        success:true,
+        count:bootcamps.length,
+        data:bootcamps
+    });
 })

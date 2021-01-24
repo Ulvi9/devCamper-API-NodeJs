@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="bootcamp model CRUD">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding custom error handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/bootcamps.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/bootcamps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bootcamps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Bootcamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bootcamp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bootcamps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../React/React-BurgerBuilder-Project/burger-builder" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -65,7 +67,12 @@
       <updated>1610878066531</updated>
       <workItem from="1610878067903" duration="20010000" />
       <workItem from="1610909784029" duration="3706000" />
-      <workItem from="1610952838917" duration="10677000" />
+      <workItem from="1610952838917" duration="10801000" />
+      <workItem from="1611113929666" duration="6003000" />
+      <workItem from="1611161937208" duration="592000" />
+      <workItem from="1611253230800" duration="172000" />
+      <workItem from="1611423318113" duration="4552000" />
+      <workItem from="1611469634568" duration="694000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -74,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610914318422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding custom error handling">
+      <created>1611000106168</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611000106168</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,17 +111,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bootcamp model CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootcamp model CRUD" />
+    <MESSAGE value="adding custom error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding custom error handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610878521243" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610914326765">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611469734033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610914326765" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611469734033" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611000113930">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611000113930" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610879217757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
