@@ -15,6 +15,7 @@ const app=express();
 
  //route files
 const bootcamps=require("./routes/bootcamps");
+const courses=require("./routes/courses");
 
 //body parser
 app.use(express.json())
@@ -26,6 +27,7 @@ console.log(process.argv)
 
 //mount routers
 app.use("/api/v1/bootcamps",bootcamps);
+app.use("/api/v1/courses",courses);
 app.use(errorHandler);
 
 //listen port

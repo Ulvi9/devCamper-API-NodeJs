@@ -6,9 +6,15 @@ const {
     createBootcamp,
     deleteBootcamp,
     getBootcampInRadius
-} =require("../controllers/bootcamps")
+} =require("../controllers/bootcamps");
+
+//include others resources
+const courseRouter=require("./courses")
+
 const router=express.Router();
 
+//re-route
+router.use("/:bootcampId/courses",courseRouter)
 
 router.route("/")
     .get(getBootcamps)
