@@ -19,11 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding pagination">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding course model and CRUD operations">
+      <change afterPath="$PROJECT_DIR$/controllers/courses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/advancedResults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/poto_5d725a1b7b292f5f8ceff788.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/bootcamps.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/bootcamps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bootcamps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Bootcamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bootcamp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Course.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bootcamps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -43,12 +49,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1nBz2fcRkxL5Gpcs17x0M11w8k4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../React/React-BurgerBuilder-Project/burger-builder" />
@@ -73,7 +82,8 @@
       <workItem from="1611469634568" duration="3594000" />
       <workItem from="1611491494460" duration="6030000" />
       <workItem from="1611554237487" duration="4137000" />
-      <workItem from="1611641584493" duration="3649000" />
+      <workItem from="1611641584493" duration="8276000" />
+      <workItem from="1611724838387" duration="7612000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -110,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611500694001</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding course model and CRUD operations">
+      <created>1611645867145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611645867145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,12 +149,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="bootcamp model CRUD" />
     <MESSAGE value="adding custom error handling" />
     <MESSAGE value="adding filtering" />
     <MESSAGE value="adding sorting" />
     <MESSAGE value="adding pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding pagination" />
+    <MESSAGE value="adding course model and CRUD operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding course model and CRUD operations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
@@ -148,10 +167,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611469734033" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611500701530">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611646235597">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611500701530" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611646235597" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610879217757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

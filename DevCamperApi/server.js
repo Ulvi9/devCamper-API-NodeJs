@@ -4,6 +4,8 @@ const morgan=require("morgan");
 const colors=require("colors");
 const errorHandler=require("./middleware/error");
 const connectDb=require("./config/db");
+const fileupload=require("express-fileupload");
+const path=require("path");
 
 
 //load end vars
@@ -23,8 +25,12 @@ app.use(express.json())
 if (process.env.NODE_ENV=="development"){
     app.use(morgan("dev"));
 };
-console.log(process.argv)
 
+//file uploads
+app.use(fileupload());
+
+// set static folder
+app.use(express.static(path.join(__dirname,"public")));
 //mount routers
 app.use("/api/v1/bootcamps",bootcamps);
 app.use("/api/v1/courses",courses);
