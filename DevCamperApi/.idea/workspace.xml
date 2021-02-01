@@ -19,18 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding course model and CRUD operations">
-      <change afterPath="$PROJECT_DIR$/controllers/courses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/advancedResults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/poto_5d725a1b7b292f5f8ceff788.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding fileUpload to bootcamp model">
+      <change afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/reviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/reviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/bootcamps.json" beforeDir="false" afterPath="$PROJECT_DIR$/_data/bootcamps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bootcamps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Bootcamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bootcamp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Course.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/bootcamps.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bootcamps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeder.js" beforeDir="false" afterPath="$PROJECT_DIR$/seeder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +93,14 @@
       <workItem from="1611491494460" duration="6030000" />
       <workItem from="1611554237487" duration="4137000" />
       <workItem from="1611641584493" duration="8276000" />
-      <workItem from="1611724838387" duration="7612000" />
+      <workItem from="1611724838387" duration="8453000" />
+      <workItem from="1611812863151" duration="1221000" />
+      <workItem from="1611941014961" duration="2428000" />
+      <workItem from="1611948872651" duration="974000" />
+      <workItem from="1611987119190" duration="16983000" />
+      <workItem from="1612021908843" duration="4272000" />
+      <workItem from="1612156467031" duration="4058000" />
+      <workItem from="1612161924261" duration="28183000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -127,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611645867145</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding fileUpload to bootcamp model">
+      <created>1611756989712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611756989713</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,21 +180,22 @@
     <MESSAGE value="adding sorting" />
     <MESSAGE value="adding pagination" />
     <MESSAGE value="adding course model and CRUD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding course model and CRUD operations" />
+    <MESSAGE value="adding fileUpload to bootcamp model" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding fileUpload to bootcamp model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610878521243" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611469734033">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611818990064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611469734033" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611646235597">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611818990064" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611756998926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611646235597" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611756998926" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610879217757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

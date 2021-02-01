@@ -1,8 +1,8 @@
 const crypto = require('crypto');
+const bcrypt=require("bcryptjs")
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const randomize = require('randomatic');
+//const randomize = require('randomatic');
 
 const UserSchema = new mongoose.Schema({
   name: {
@@ -31,17 +31,17 @@ const UserSchema = new mongoose.Schema({
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
-  confirmEmailToken: String,
-  isEmailConfirmed: {
-    type: Boolean,
-    default: false,
-  },
-  twoFactorCode: String,
-  twoFactorCodeExpire: Date,
-  twoFactorEnable: {
-    type: Boolean,
-    default: false,
-  },
+  // confirmEmailToken: String,
+  // isEmailConfirmed: {
+  //   type: Boolean,
+  //   default: false,
+  // },
+  // twoFactorCode: String,
+  // twoFactorCodeExpire: Date,
+  // twoFactorEnable: {
+  //   type: Boolean,
+  //   default: false,
+  // },
   createdAt: {
     type: Date,
     default: Date.now,
@@ -64,13 +64,13 @@ UserSchema.methods.getSignedJwtToken = function () {
     expiresIn: process.env.JWT_EXPIRE,
   });
 };
-
-// Match user entered password to hashed password in database
+//
+// // Match user entered password to hashed password in database
 UserSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-// Generate and hash password token
+// // Generate and hash password token
 UserSchema.methods.getResetPasswordToken = function () {
   // Generate token
   const resetToken = crypto.randomBytes(20).toString('hex');
@@ -81,25 +81,25 @@ UserSchema.methods.getResetPasswordToken = function () {
     .update(resetToken)
     .digest('hex');
 
-  // Set expire
+//   // Set expire
   this.resetPasswordExpire = Date.now() + 10 * 60 * 1000;
 
   return resetToken;
 };
-
-// Generate email confirm token
-UserSchema.methods.generateEmailConfirmToken = function (next) {
-  // email confirmation token
-  const confirmationToken = crypto.randomBytes(20).toString('hex');
-
-  this.confirmEmailToken = crypto
-    .createHash('sha256')
-    .update(confirmationToken)
-    .digest('hex');
-
-  const confirmTokenExtend = crypto.randomBytes(100).toString('hex');
-  const confirmTokenCombined = `${confirmationToken}.${confirmTokenExtend}`;
-  return confirmTokenCombined;
-};
+//
+// // Generate email confirm token
+// UserSchema.methods.generateEmailConfirmToken = function (next) {
+//   // email confirmation token
+//   const confirmationToken = crypto.randomBytes(20).toString('hex');
+//
+//   this.confirmEmailToken = crypto
+//     .createHash('sha256')
+//     .update(confirmationToken)
+//     .digest('hex');
+//
+//   const confirmTokenExtend = crypto.randomBytes(100).toString('hex');
+//   const confirmTokenCombined = `${confirmationToken}.${confirmTokenExtend}`;
+//   return confirmTokenCombined;
+// };
 
 module.exports = mongoose.model('User', UserSchema);
