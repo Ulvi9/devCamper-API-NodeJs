@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding Authentication and Review Model">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding API security">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <workItem from="1612021908843" duration="4272000" />
       <workItem from="1612156467031" duration="4058000" />
       <workItem from="1612161924261" duration="28358000" />
-      <workItem from="1612243478512" duration="4660000" />
+      <workItem from="1612243478512" duration="6521000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -144,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612216631734</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding API security">
+      <created>1612248887209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612248887209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,21 +176,22 @@
     <MESSAGE value="adding course model and CRUD operations" />
     <MESSAGE value="adding fileUpload to bootcamp model" />
     <MESSAGE value="adding Authentication and Review Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Authentication and Review Model" />
+    <MESSAGE value="adding API security" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding API security" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610878521243">
+    <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612253473776">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610878521243" />
+    <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1612253473776" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611818990064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611818990064" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612216646384">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612248895236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612216646384" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612248895236" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612216541621">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
