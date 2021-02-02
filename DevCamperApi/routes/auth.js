@@ -2,6 +2,7 @@ const express=require("express");
 const {
     register,
     login,
+    logout,
     getMe,
     forgetPassword,
     resetPassword,
@@ -17,4 +18,5 @@ router.post("/forgetpassword",forgetPassword);
 router.put("/resetpassword/:resettoken",resetPassword);
 router.put("/updatedetails",protect,updateDetails);
 router.put("/updatepassword",protect,updatePassword);
+router.get("/logout",logout)
 module.exports=router;
