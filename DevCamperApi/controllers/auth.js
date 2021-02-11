@@ -45,6 +45,7 @@ exports.login=asyncHandler(async (req,res,next)=>{
 exports.getMe = asyncHandler(async (req, res, next) => {
     // user is already available in req due to the protect middleware
    // const user = req.user;
+    console.log(req.user)
     const user=await User.findById(req.user.id);
 
     res.status(200).json({

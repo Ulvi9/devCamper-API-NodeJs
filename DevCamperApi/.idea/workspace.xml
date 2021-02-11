@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding API security">
+    <list default="true" id="dbad4cea-fb66-4459-93c0-a3771c2fe0ba" name="Default Changelist" comment="adding ReadMe File">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../React/React-BurgerBuilder-Project/burger-builder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../task/task1" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -80,7 +83,15 @@
       <workItem from="1612021908843" duration="4272000" />
       <workItem from="1612156467031" duration="4058000" />
       <workItem from="1612161924261" duration="28358000" />
-      <workItem from="1612243478512" duration="6521000" />
+      <workItem from="1612243478512" duration="14028000" />
+      <workItem from="1612287260681" duration="33000" />
+      <workItem from="1612344367091" duration="63000" />
+      <workItem from="1612359432927" duration="6147000" />
+      <workItem from="1612374272460" duration="546000" />
+      <workItem from="1612553962048" duration="1016000" />
+      <workItem from="1612592491545" duration="80000" />
+      <workItem from="1612899325192" duration="3765000" />
+      <workItem from="1612934832720" duration="11041000" />
     </task>
     <task id="LOCAL-00001" summary="bootcamp model CRUD">
       <created>1610914318422</created>
@@ -145,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612248887209</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding ReadMe File">
+      <created>1612254110163</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612254110163</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,21 +195,22 @@
     <MESSAGE value="adding fileUpload to bootcamp model" />
     <MESSAGE value="adding Authentication and Review Model" />
     <MESSAGE value="adding API security" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding API security" />
+    <MESSAGE value="adding ReadMe File" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding ReadMe File" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612253473776">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1612253473776" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611818990064">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1612934972916">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611818990064" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612248895236">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612934972916" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612267372251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612248895236" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612267372251" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612216541621">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
